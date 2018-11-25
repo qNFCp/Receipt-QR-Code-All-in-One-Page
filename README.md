@@ -16,8 +16,16 @@
 微信和QQ建议为收款码图片<br>
 #### 当然可以用PS做张图片访问到该页面，然后就会有很神奇的效果了
 
-> [blog][1] · GITHUB@[qNFCp][2]
+# demo
+- [page][1]
+- ![qr][2]
+(我知道我图做的渣，别吐槽！QWQ)
+
+> [blog][3] · GITHUB [Three-pay-in-one-HTML][4] @[qNFCp][5]
 
 
-  [1]: https://www.qnfcp.xyz/index.php/archives/81/
-  [2]: https://github.com/qNFCp
+  [1]: https://pay.qnfcp.xyz/
+  [2]: https://pay.qnfcp.xyz/img/qr.jpg
+  [3]: https://www.qnfcp.xyz/index.php/archives/81/
+  [4]: https://github.com/qNFCp/Three-pay-in-one-HTML
+  [5]: https://github.com/qNFCp
