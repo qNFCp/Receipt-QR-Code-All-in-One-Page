@@ -1,8 +1,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- 修改标题 -->
-<title>页面标题</title>
+<!-- title -->
+<title>WEB TITLE</title>
 <style type="text/css">
 body{
 	text-align: center;
@@ -16,7 +16,7 @@ div.text{
 </style>
 </head>
 <body>
-    <script  type="text/javascript">
+	<script  type="text/javascript">
 	var setting = {
 	 // 在以下双引号中修改为QQ钱包收款码图片链接
 	qqUrl: "https://******/img/qq.jpg",
@@ -25,22 +25,25 @@ div.text{
 	// 在以下双引号中修改为支付宝收款链接（通过识别收款码得到）
 	aliUrl: "https://qr.alipay.com/**********",
         }
-    </script>
-    <script  type="text/javascript">
+	</script>
+	<script  type="text/javascript">
 	if(navigator.userAgent.match(/Alipay/i)) {
-		//支付宝UA判断
+		//Alipay old UA judgement
+		window.location.href = setting.aliUrl; 
+	}if(navigator.userAgent.match(/AlipayClient\//i)){
+		//Alipay new UA judgement
 		window.location.href = setting.aliUrl; 
 	}else if(navigator.userAgent.match(/MicroMessenger\//i)) {
-		//微信UA判断
+		//WeChat UA judgement
 		window.location.href = setting.wechatUrl;
-		}else if(navigator.userAgent.match(/QQ\//i)) {
-		//QQUA判断
+	}else if(navigator.userAgent.match(/QQ\//i)) {
+		//QQ UA judgement
 		window.location.href = setting.qqUrl;
-}
+	}
 </script>
 <div class="text">
-<br><br><br><br>
-<p>请使用 支付宝、QQ、微信 扫描二维码支付</p>
+	<br><br><br><br>
+	<p>请使用 支付宝、QQ、微信 扫描二维码支付</p>
 </div>
 </body>
 </html>
